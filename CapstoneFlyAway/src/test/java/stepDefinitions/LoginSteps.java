@@ -46,6 +46,19 @@ public class LoginSteps {
 		fly.See_Bookings();
 		System.out.println("user enters details required");
 	}
+	
+	@Given("user clicks on the book flight")
+	public void user_clicks_on_the_book_flight() {
+	    System.out.println("user clicks on the book flight");
+	}
+	@When("user is on payment page clicks on complete booking")
+	public void user_is_on_payment_page_clicks_on_complete_booking() {
+	   System.out.println("user is on payment page clicks on complete booking");
+	}
+	@Then("user is able to see the booked flights")
+	public void user_is_able_to_see_the_booked_flights() {
+	   System.out.println("user is able to see the booked flights");
+	}
 
 
 

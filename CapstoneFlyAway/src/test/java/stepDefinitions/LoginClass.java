@@ -23,41 +23,41 @@ public class LoginClass {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://localhost:8080/FlyAway/");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[normalize-space()='Home']")).click();
 	}
 	
 	public static void MEMBER_LOGIN() throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[normalize-space()='Login/Signup']")).click();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		driver.findElement(By.name("email_id")).sendKeys("rajgaurav@fly.com");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		driver.findElement(By.name("pwd")).sendKeys("password");
 	}
 	
 	public static void Login() throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 //		driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
 		driver.findElement(By.xpath("//button[text()=\"Login\"]")).click();
 	}
 	public static void Nav_Home() throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[normalize-space()='Home']")).click();
 	}
 	public static void Register() throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//select[@name='source']")).sendKeys("B");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//select[@name='destination']")).sendKeys("H");
 		driver.findElement(By.xpath("//button[normalize-space()='Submit']")).click();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[normalize-space()='Book Flight']")).click();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[normalize-space()='Click to complete booking']")).click();
 	}
 	public static void See_Bookings() throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[normalize-space()='See Your Bookings']")).click();
 	}
 
